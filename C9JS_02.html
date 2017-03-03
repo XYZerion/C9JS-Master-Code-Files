@@ -1,28 +1,31 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>JavaScript Example</title>
-  <script type="text/javascript">
-    function substitute() {
-      var myValue = document.getElementById('myTextBox').value;
 
-      if (myValue.length === 0) {
-        alert('Please enter a real value in the text box!');
-        return;
-      }
+    <head>
+        <title>JavaScript Example</title>
+        <script type="text/javascript">
+            function substitute() {
+                var myValue = document.getElementById('myTextBox').value;
 
-      var myTitle = document.getElementById('title');
-      title.innerHTML = myValue;
+                if (myValue.length === 0) {
+                    alert('Please enter a real value in the text box!');
+                    return;
+                }
 
-    }
-  </script>
+                var myTitle = document.getElementById('title');
+                title.innerHTML = myValue;
 
-</head>
-<body>
-  <h1 id="title">JavaScript Example</h1>
+            }
+        </script>
 
-  <input type="text" id="myTextBox" />
-  <input type="submit" value="Click Me" onclick="substitut();" />
+    </head>
 
-</body>
+    <body>
+        <h1 id="title">JavaScript Example</h1>
+
+        <input type="text" id="myTextBox" />
+        <input type="submit" value="Click Me" onclick="substitute()" />
+
+    </body>
+
 </html>
